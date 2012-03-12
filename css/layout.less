@@ -1,0 +1,129 @@
+/* Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+html, body, #wrap {
+	height: 100%;	
+}
+
+body > #wrap {
+	height: auto; 
+	min-height: 100%;
+}
+
+body {
+	.fn-gradient(black,gray);
+	color: @main;
+}
+
+.main{
+	background:transparent url(css/img/smoke_white.png) no-repeat left -90px;
+}
+
+.content_holder{
+	position: relative;
+	display: block;
+	float: left;
+	width:100%;
+}
+
+.sidebar{
+	width:3%;	
+	display:block;
+	float:left;
+	margin-top:90px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+	.sidebar span.menu_title{
+		display:block;
+	}
+	
+	.sidebar span.menu_icon{
+		width:30px; height:28px;
+		background:transparent url(css/img/lens_16x16_000000.png) no-repeat 5px center;
+		display:block;
+		float:left;
+	}
+
+	.use-sidebar .sidebar{
+		width:12.5%;	
+	}
+	
+	.use-sidebar .content{
+		width:87.5%;
+	}
+
+.slide_colapse a{
+	display: block;
+	padding: 2px 0 4px 0;
+	width: 100%;
+	text-align: center;
+}
+	
+.slide_colapse img{	
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}	
+
+.content{
+	width:97%;
+	display:block;
+	float:right;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+}
+
+ul.slide_menu {	
+  	display: block;
+    padding:0px;margin:0px;	
+}
+
+	ul.slide_menu li {				
+		margin:0px; padding:0px;
+		list-style:none;
+		.fn-gradient(#292929,#252525);
+		.fn-curved-box(2px,0,0,2px);	
+		border-top: 1px solid #323232;
+		border-bottom: 1px solid #1B1B1B;
+		opacity:0.85;
+		filter:alpha(opacity=85); /* For IE8 and earlier */
+	}
+	
+		ul.slide_menu li.selected a {
+			background:rgba(150,150,150,0.5);
+			-moz-box-shadow:
+				0px 0px 0px rgba(000,000,000,0),
+				inset -2px 0px 6px rgb(30,30,30);
+			-webkit-box-shadow:
+				0px 0px 0px rgba(000,000,000,0),
+				inset -2px 0px 6px rgb(30,30,30);
+			border: 0px solid #304ea6;
+		}
+	
+		ul.slide_menu li a{
+			display: block;
+			min-height: 28px;
+			line-height: 28px;
+			position: relative;
+			margin: 0;
+			padding: 0 5px 0 10px;			
+			text-decoration: none;
+			color: #fff;
+			font-size: 11px;
+			border-right: 4px solid transparent;			
+			cursor: pointer;	
+			.fn-curved-box(2px,0,0,2px);			
+			-moz-transition: border 0.2s ease;
+			-ms-transition: border 0.2s ease;
+			-o-transtion: border 0.2s ease;
+			-webkit-transition: border 0.2s ease;
+			transition: border 0.2s ease;
+		}
+		
+		ul.slide_menu li a:hover{
+			border-right-color: #666;			
+			background:#1B1B1B;			
+		}

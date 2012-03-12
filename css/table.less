@@ -1,0 +1,290 @@
+@table-row-top:#393939;
+@table-row-bottom:#000;
+@table-row-top-sort:#353535;
+
+#table-top{
+	margin-top:0px;
+	background:#e8e8e8 none repeat scroll 0 0;
+}
+
+
+#table-top table{
+	margin:0;
+	background:#e8e8e8 none repeat scroll 0 0;
+	width:100%;
+}
+
+#table-top table th{
+	background:rgb(150,150,150) none repeat scroll 0 0;
+	font-weight:normal;
+	text-align:left;
+	padding:13px;
+	margin:0;
+	vertical-align:middle;
+}
+
+#table-top table th.table-command{
+	padding-right:16px;
+}
+
+#table-top {
+	font-family:Arial, Verdana,sans-serif;
+}
+
+#table-command{
+	float:right;
+	margin:0; padding:0;
+}
+
+
+#table-top span{
+
+}
+
+#table-content{
+	display:block; float:left;
+	width:100%;	
+	clear:both;
+}
+
+
+
+#table-content {	
+	font-size:85%;
+}
+
+#table-content a {
+	font-family:arial,verdana,sans-serif;	
+	font-size:100%;
+}
+
+#table-content table {
+	width:100%;
+	margin-bottom:0;
+}
+
+#table-content table th{		
+	font-weight:normal;
+	padding:8px;	
+	vertical-align:middle;
+	text-align:left;
+	.fn-gradient(@table-row-top, @table-row-bottom);
+	height:18px;
+	color:#EBEBEB;
+}
+
+	#table-content table th a{
+		color:#ebebeb;
+	}
+
+#table-content th.w30 {
+	width:30%;
+}
+
+#table-content th.w20 {
+	width:20%;
+}
+
+#table-content th.w15 {
+	width:15%;
+}
+
+#table-content th.w10 {
+	width:10%;
+}
+
+#table-content th.empty {
+	width:1%;
+	padding-top:10px;
+}
+
+#table-content th.empty img{
+	padding:0px;
+}
+
+#table-content th.sort {
+	.fn-gradient(@table-row-top-sort, @table-row-bottom);
+	font-weight:bold;
+}
+
+#table-content th.sort.asc{
+	background:url(images/table_content_th_bg_sort.png) no-repeat right top;
+}
+
+	#table-content th.sort a{
+		color:#C5C5C5;
+	}
+
+	#table-content span.checkbox{
+		background:transparent url(images/uncheck.jpg) no-repeat center right;
+		padding:5px 7px;
+		width:4px;		
+	}
+	
+		#table-content span.checkbox.checked{
+			background:transparent url(images/check.jpg) no-repeat center right;			
+		}
+
+#table-content th.l_column, #table-content td.l_column{
+	text-align:left;
+}
+
+#table-content th:hover{
+	cursor:pointer;
+	background-color:#D5D5D5;
+}
+
+#table-content table tr{
+	border-collapse:collapse;
+	width:100%;
+}
+
+#ucuc { 
+	cursor:pointer;
+	
+}
+
+#table-content th img {
+	margin:0; padding:0;
+} 
+
+
+
+#table-content .even td {
+	background-color:#d2d2d2;
+}
+
+
+#table-content .row_selected_odd td {
+	background-color:#fff799;
+}
+
+#table-content .row_selected_even td {
+	background-color:#c2c2c2;
+}
+
+#table-content .column_header {
+	padding:0 10px 0 0;
+}
+
+
+#table-content td {
+	background:#ebebeb none repeat scroll 0 0;	
+	padding:8px;
+	vertical-align:middle;
+}
+
+#table-content td.count {
+	width:1%;
+	text-align:center;
+}
+
+#table-content td.sort {
+	font-weight:bold;
+	color:#262626;
+}
+
+#table-content .odd td.sort {
+	background-color:#d9d9d9;
+}
+
+#table-content .even td.sort {
+	background-color:#c2c2c2;
+}
+
+#table-content .row_selected_odd td.sort {
+	background-color:#f5ed93;
+}
+#table-content .row_selected_even td.sort {
+	background-color:#f0e890;
+}
+
+	#check-holder input.check-me {
+		margin:0; padding:0;
+		margin-top:3px;		
+	}
+
+
+#table-content td.text {
+	text-align:left;
+}
+
+#table-content td.r_column {
+	text-align:right;
+}
+
+#table-content .text_wrapper {
+	display:block;
+	margin:0;
+	position:relative;
+}
+
+#table-bottom{
+	display:block;	float:left;
+	width:1000px;
+	margin-bottom:10px;
+	background-color:#f1aa00;
+	border-top:4px solid #3d3d3d;
+	height:34px;
+}
+
+	#tabs #table-bottom{
+		width:100%;
+	}
+	
+	#structure #table-bottom{
+		width:650px;
+	}
+	
+	#tree #table-bottom{
+		width:310px;
+	}
+	
+	#modal #table-bottom{
+		width:670px;
+		margin-bottom:0px;
+	}
+
+.actions a {
+	float:left;			
+	margin-left:5px;
+}
+
+.actions span.pic {	
+	display:block;		
+	height:14px; width:14px;
+	line-height:14px;
+	padding:2px;
+	text-indent:-99999px;
+	margin-right:2px;
+	cursor:pointer;
+}
+
+	.edit span.pic {
+		background:transparent url(images/edit_16x16_404040.png) no-repeat scroll left center;
+	}
+	
+		a.edit:hover span.pic {
+			background:transparent url(images/edit_16x16_000000.png) no-repeat scroll left center;
+		}
+
+	.view span.pic {
+		background:transparent url(images/info_16x16_404040.png) no-repeat scroll left center;
+	}
+
+		a.view:hover span.pic {
+			background:transparent url(images/info_16x16_000000.png) no-repeat scroll left center;			
+		}
+
+	.delete span.pic {
+		background:transparent url(images/trash_16x16_404040.png) no-repeat scroll left center;
+		
+	}
+
+		a.delete:hover span.pic {
+			background:transparent url(images/trash_16x16_000000.png) no-repeat scroll left center;			
+		}
+
+
+
+

@@ -1,0 +1,67 @@
+/* Text shadows */
+@sh-apple-style: 0px 1px 1px #fff;
+@sh-simple: 2px 2px 3px #000;
+@sh-on-top: 0px 1px 1px #000;
+@sh-glow: 1px 1px 6px #fff;
+
+.fn-gradient(@secondary: #1a82f7, @primary: #2F2727){
+	/* fallback */
+	background-color: @primary;
+	background: url(images/linear_bg_2.png);
+	background-repeat: repeat-x;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(@primary), to(@secondary));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, @secondary, @primary);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, @secondary, @primary);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, @secondary, @primary);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, @secondary, @primary);
+}
+
+.fn-box-shadow (@x: 0, @y: 0, @blur: 1px, @color: #000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.fn-inner-shadow(@x:0px, @y:0px, @blur:6px, @spread:-3px, @color:#000){
+	-webkit-box-shadow: inset @x @y @blur @spread @color;
+	-moz-box-shadow: inset @x @y @blur @spread @color;
+	box-shadow: inset @x @y @blur @spread @color;
+}
+
+.fn-rounded-box(@size:5px) {
+	-moz-border-radius-topleft: @size;
+	-moz-border-radius-topright: @size;
+	-moz-border-radius-bottomright: @size;
+	-moz-border-radius-bottomleft: @size;
+	-webkit-border-top-left-radius: @size;
+	-webkit-border-top-right-radius: @size;
+	-webkit-border-bottom-left-radius: @size;
+	-webkit-border-bottom-right-radius: @size;
+}
+
+.fn-curved-box(@topleft:5px, @topright:5px, @bottomright:5px, @bottomleft:5px) {
+	-moz-border-radius-topleft: @topleft;
+	-moz-border-radius-topright: @topright;
+	-moz-border-radius-bottomright: @bottomright;
+	-moz-border-radius-bottomleft: @bottomleft;
+	-webkit-border-top-left-radius: @topleft;
+	-webkit-border-top-right-radius: @topright;
+	-webkit-border-bottom-left-radius: @bottomleft;
+	-webkit-border-bottom-right-radius: @bottomright;
+}
+
+.fn-text-shadow(@style){
+	text-shadow: @style;
+}
+
+.fn-rotate(@deg:45deg){
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+}

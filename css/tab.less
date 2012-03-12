@@ -1,0 +1,196 @@
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+.tabs{
+	margin-left:0;
+}
+
+ul.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 15px;	
+	display:block;	
+	height:31px;
+}
+
+	.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+		display: block;
+		clear: both;
+		content: " ";
+	}
+
+		.ui-tabs-nav li {
+			float: left;
+			margin-right:2px;
+			cursor:pointer;
+			padding-left:15px;
+			margin-left:0;
+		}
+
+			.ui-tabs-nav li a:link,
+			.ui-tabs-nav li a:visited,
+			.ui-tabs-nav li a:hover,
+			.ui-tabs-nav li a:active {
+				margin:0; padding:0;	
+				margin-right:10px;
+				color:#f7d057;
+				display:block;
+				font-size:90%;		
+				height:31px;
+				line-height:33px;	
+				text-decoration:none;								
+			}
+
+			.ui-tabs-nav li a span{
+				display:block;
+				height:30px;
+				padding-right:30px;	
+				cursor:pointer;
+				font-weight:bold;
+			}
+
+			.ui-tabs-nav li.hover a{
+				display:block;
+			}
+
+			.ui-tabs-nav li.hover a span{
+				display:block;
+			}
+			
+			.ui-tabs-nav li.ui-state-default {
+				padding-left:5px;
+			}
+			
+			.ui-tabs-nav li.ui-state-active {
+				padding-left:15px;
+			}
+			 
+			.ui-tabs-nav li.ui-tabs-selected {
+				background:transparent url(css/img/tab-bg-l.png) no-repeat left top;
+			}
+			
+			.ui-tabs-nav li.ui-tabs-selected a:link,
+			.ui-tabs-nav li.ui-tabs-selected a:visited,
+			.ui-tabs-nav li.ui-tabs-selected a:hover,
+			.ui-tabs-nav li.ui-tabs-selected a:active {
+				padding-right:30px;
+				background:transparent url(css/img/tab-bg.png) no-repeat right top;
+				font-weight:bold;
+				color:#323232;
+			} 
+			.ui-tabs-nav li.ui-tabs-selected a span{
+				
+			}
+		
+	.ui-tabs-panel { 
+		padding:20px; padding-top:10px;
+		background: #e3e3e3;
+		float:left;
+	}
+	
+	.grid_8 .ui-tabs-panel { 
+		width:640px;
+		padding:10px;
+	}
+	
+
+	.ui-tabs-loading em {
+		padding: 0 0 0 20px;
+		background: url(css/img/loading.gif) no-repeat 0 50%;
+	}
+
+	.ui-state-focus a, .ui-state-hover a:link, .ui-state-hover a:visited{
+		outline:medium none;
+		text-decoration:none;
+	}
+	
+	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+		outline:medium none;
+		text-decoration:none;
+	}
+	
+#structure #tabs {
+	margin:0px;
+	width:670px;
+}
+
+ .tab_content{
+	border-bottom: 2px solid #7D7D7D;
+	display: block;
+	float: left;
+	width: 100%;
+	
+}
+
+	#structure .tab_content{
+		width:620px;
+		padding:0 10px;		
+	}
+	
+	#tree .tab_content{
+		width:290px;
+	}
+	
+	#modal .tab_content{
+		width:620px;		
+	}
+
+.tab_content .links{
+	float:right;
+}
+
+.tab_content h2{
+	font-size:200%;
+	color:#7d7d7d;
+	float:left;
+	padding:0 0 5px 5px;
+}
+
+#tree {	
+	padding:10px; margin:0;	
+	padding-top:41px;
+	float:left;
+	width:310px;
+	min-height:350px;
+}
+
+.structure_holder {
+	background:#E3E3E3 url('images/black_31.png') repeat-x;	
+	display:block;
+	float:left;
+	margin-left:10px; margin-bottom:10px;
+}
+
+
+.tree_commands {
+	background:#E3E3E3;
+	-moz-border-radius:3px 3px 3px 3px;
+	border:1px solid #C9CDD0;
+	display:block;	
+	height:34px;
+	line-height:34px;	
+	margin:10px; margin-bottom:0;	
+}
+
+.tree_holder {
+	width:310px;
+	/*background-color:#C9CDD0;*/
+	
+	background:-moz-linear-gradient(center top , #C9CDD0, #E3E3E3) repeat scroll 0 0 #C9CDD0;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#C9CDD0),to(#E3E3E3));
+	/*filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr=#C9CDD0,endColorStr=#E3E3E3);*/
+	
+	display:block;
+	float:left;
+	min-height:350px;
+}

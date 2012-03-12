@@ -1,0 +1,44 @@
+<mockup version="1.0" skin="sketch" measuredW="1454" measuredH="511" mockupW="1454" mockupH="492">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TabBar" x="463" y="140" w="598" h="371" measuredW="224" measuredH="100" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>One%2C%20Two%2C%20Three%2C%20Four</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Accordion" x="292" y="159" w="150" h="306" measuredW="150" measuredH="234" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Item%20One%0AItem%20Two%0A-%20Sub-Item%202.1%0A-%20Sub-Item%202.2%0AItem%20Three%0AItem%20Four</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="417" y="164" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>0</color>
+        <icon>LeftFillTriangleIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::DataGrid" x="478" y="195" w="568" h="234" measuredW="349" measuredH="197" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <hasHeader>true</hasHeader>
+        <hLines>false</hLines>
+        <selectedIndex>-1</selectedIndex>
+        <text>Name%5Cr%28job%20title%29%20%5E%2C%20Age%2C%20Nickname%2C%20Employee%0AGiacomo%20Guilizzoni%5CrFounder%20%26%20CEO%2C%2034%2C%20Peldi%2C%20%5Bx%5D%0AGuido%20Jack%20Guilizzoni%2C%204%2C%20The%20Guids%2C%20%5B%5D%0AMarco%20Botton%5CrTuttofare%2C%2031%2C%20%2C%20%5Bx%5D%0AMariah%20Maclachlan%5CrBetter%20Half%2C%2035%2C%20Patata%2C%20%5Bx%5D%0AValerie%20Liberty%5CrCOO%5C%2C%20WOW%21%20Division%2C%20%3A%29%2C%20Val%2C%20%5Bx%5D%0A%7B75L%2C%200R%2C%2025%2C%200C%7D</text>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="19" w="1454" h="96" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <borderColor>16370588</borderColor>
+        <borderStyle>none</borderStyle>
+        <color>16167531</color>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="987" y="469" w="-1" h="-1" measuredW="59" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Button</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
